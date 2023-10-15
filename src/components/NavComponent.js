@@ -10,8 +10,8 @@ function NavComponent() {
       <Navbar expand="md" className="bg-body-tertiary">
         <Container>
           <div className="navIcons">
-            <FontAwesomeIcon icon={faUser} className="px-1" bounce />
-            <FontAwesomeIcon icon={faBagShopping} className="px-1" bounce />
+            <FontAwesomeIcon icon={faUser} className="px-2" />
+            <FontAwesomeIcon icon={faBagShopping} className="px-2" />
           </div>
           <Navbar.Brand href="#home" className="oxygenFont">
             <img

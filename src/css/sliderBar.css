@@ -1,0 +1,12 @@
+.sliderBar {
+  background-color: red;
+  min-height: 7rem;
+}
+
+.sliderImg {
+  max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
