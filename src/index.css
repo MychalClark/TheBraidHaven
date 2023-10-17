@@ -1,3 +1,14 @@
+:root {
+  --color1: #e16388;
+  --color2: #fffefe;
+  --color3: #010101;
+  --color4: #acc5cc;
+  --color5: #ffdf79;
+  --color6: #5d2b26;
+  --color7: #ddd300;
+  --color8: #717171;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,6 +27,75 @@ code {
   font-family: "Oxygen", sans-serif;
 }
 
-.textColor1 {
-  color: #e16388;
+.passionFont {
+  font-family: "Passion One", sans-serif;
 }
+
+.fairFont {
+  font-family: "Playfair Display", serif;
+}
+
+.textColor1 {
+  color: var(--color1);
+}
+
+.backgroundColor1 {
+  background-color: var(--color1);
+}
+.textColor2 {
+  color: var(--color2);
+}
+
+.backgroundColor2 {
+  background-color: var(--color2);
+}
+
+.textColor3 {
+  color: var(--color3);
+}
+
+.backgroundColor3 {
+  background-color: var(--color3);
+}
+
+.textColor4 {
+  color: var(--color4);
+}
+
+.backgroundColor4 {
+  background-color: var(--color4);
+}
+
+.textColor5 {
+  color: var(--color5);
+}
+
+.backgroundColor5 {
+  background-color: var(--color5);
+}
+
+.textColor6 {
+  color: var(--color6);
+}
+
+.backgroundColor6 {
+  background-color: var(--color6);
+}
+
+.textColor7 {
+  color: var(--color7);
+}
+
+.backgroundColor7 {
+  background-color: var(--color7);
+}
+
+.textColor8 {
+  color: var(--color8);
+}
+
+.backgroundColor8 {
+  background-color: var(--color8);
+}
+
+/*Animations*/
