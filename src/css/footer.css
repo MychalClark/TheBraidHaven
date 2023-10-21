@@ -1,0 +1,28 @@
+.footerComponent {
+  padding: 0;
+  border-top: 7px solid #343a40;
+}
+
+.footHeader {
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 24px 30px rgba(0, 0, 0, 0.1);
+}
+
+.address > p {
+  margin: 0;
+}
+
+hr {
+  color: white;
+  height: 7px;
+  background-color: white;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.copyright {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

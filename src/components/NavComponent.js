@@ -3,31 +3,57 @@ import "../css/nav.css";
 import { Nav, NavDropdown, Navbar, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBagShopping } from "@fortawesome/free-solid-svg-icons";
-
+import { AiFillCaretDown } from "react-icons/ai";
 function NavComponent() {
   return (
-    <div>
-      <Navbar expand="md" className="bg-body-tertiary">
+    <div className="navComponent fixed-top">
+      <Navbar expand="md" className="backgroundColor1">
         <Container>
-          <div className="navIcons">
+          {/* <div className="navIcons ">
             <FontAwesomeIcon icon={faUser} className="px-2" />
             <FontAwesomeIcon icon={faBagShopping} className="px-2" />
-          </div>
-          <Navbar.Brand href="#home" className="oxygenFont">
-            <img
-              src="/images/logo.jpeg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top navLogo rounded-circle"
-              alt="TBH"
-            />
-            HAVEN
+          </div> */}
+          <Navbar.Brand href="#home" className=" navTitle gruppoFont">
+            <span></span>
+            <div className="textColor2">HAVEN</div>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+          <Navbar.Toggle aria-controls="navbar" />
+          <Navbar.Collapse id="navbar">
+            <Nav className="me-auto navLinks text-center gruppoFont">
+              <Nav.Link href="#home">
+                <div className="textColor2">Services</div>
+              </Nav.Link>
+              <NavDropdown
+                title={
+                  <span style={{ color: "#effefe" }}>
+                    About <AiFillCaretDown size={12} />
+                  </span>
+                }
+              >
+                <div className="textColor2 navLinks">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    -Careers
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                </div>
+              </NavDropdown>
+              <Nav.Link href="#link">
+                <div className="textColor2">Services</div>
+              </Nav.Link>
+              <Nav.Link href="#link">
+                <div className="textColor2">Home</div>
+              </Nav.Link>
+              <Nav.Link href="#link">
+                <div className="textColor2">Home</div>
+              </Nav.Link>
+              <Nav.Link href="#link">
+                <div className="textColor1 rounded backgroundColor2 px-2 oxygenFont ">
+                  Book Appointment
+                </div>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

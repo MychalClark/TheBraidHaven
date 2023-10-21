@@ -1,2 +1,46 @@
-.navLogo {
+.navComponent {
+  background-color: #fffefe;
+}
+.navIcons {
+  font-size: 1.4rem;
+}
+
+.navTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+}
+
+.navLinks {
+  font-size: 1.3rem;
+
+  font-weight: 1000;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+.dropdown-menu {
+  text-align: center;
+  border: none;
+  background-color: #fffefe;
+  font-size: 1.3rem;
+
+  font-weight: 1000;
+}
+
+.dropdown-item {
+  font-size: 1.3rem;
+  color: #e16388;
+  font-weight: 1000;
+}
+
+.navbar-toggler {
+  color: pink;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../public/images/menuImg.png");
 }

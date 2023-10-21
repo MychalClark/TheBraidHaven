@@ -16,6 +16,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color4) !important;
+  overflow: hidden;
 }
 
 code {
@@ -35,6 +37,16 @@ code {
   font-family: "Playfair Display", serif;
 }
 
+.comfortFont {
+  font-family: "Comfortaa", serif;
+}
+.gruppoFont {
+  font-family: "Gruppo", sans-serif;
+}
+.neonFont {
+  font-family: "Tilt Neon", sans-serif;
+}
+/*Color*/
 .textColor1 {
   color: var(--color1);
 }
@@ -97,5 +109,6 @@ code {
 .backgroundColor8 {
   background-color: var(--color8);
 }
+/*Nav*/
 
 /*Animations*/

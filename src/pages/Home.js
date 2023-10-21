@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import SliderBar from "../components/SliderBar";
 import { Container } from "react-bootstrap";
+import HeroComponent from "../components/HeroComponent";
 import "../index.css";
 function Home() {
   return (
     <div className="home">
+      <HeroComponent heroImg={"/images/girl2.png"} />
       <SliderBar
         backgroundColor="backgroundColor1"
         title="Schedule!"

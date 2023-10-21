@@ -1,0 +1,48 @@
+.heroComponent {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroText {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: slideText 2s linear 2s forwards;
+  transform: translateX(-200%);
+}
+
+.heroText > h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* .heroText > .btn {
+  background-color:;
+} */
+
+.heroImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  animation: slideImage 2s linear forwards;
+}
+
+@keyframes slideImage {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes slideText {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

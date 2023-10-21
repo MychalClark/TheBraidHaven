@@ -2,28 +2,37 @@ import "../css/sliderBar.css";
 import "../index.css";
 import { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
 
 function SliderBar({ backgroundColor, title, desc, img, link }) {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   const randomDuration = Math.random() * (900 - 500) + 500;
   const slideIn = useSpring({
     from: { transform: "translateX(100%)" },
-    to: { transform: "translateX(0)" },
+    to: { transform: "translateX(0%)" },
+    reset: inView,
     config: { duration: randomDuration },
   });
   const fadeIn = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
+    reset: inView,
     config: { duration: randomDuration },
   });
+
   return (
-    <animated.div
-      style={{
-        ...slideIn,
-        ...fadeIn,
-      }}
-      className={`sliderBar d-flex ${backgroundColor}`}
+    <div
+      ref={ref}
+      className={`${inView ? "sliderBar " : ""} d-flex ${backgroundColor}`}
     >
-      <div className="sliderText col-7 d-flex flex-column align-items-center ">
+      <animated.div
+        style={inView ? { ...slideIn, ...fadeIn } : { opacity: 0 }}
+        className="sliderText col-7 d-flex flex-column align-items-center "
+      >
         <a
           name=""
           id=""
@@ -38,11 +47,14 @@ function SliderBar({ backgroundColor, title, desc, img, link }) {
             {desc}
           </span>
         </div>
-      </div>
-      <div className="sliderImgContainer col-5">
+      </animated.div>
+      <animated.div
+        style={inView ? { ...slideIn, ...fadeIn } : { opacity: 0 }}
+        className="sliderImgContainer col-5"
+      >
         <img className="sliderImg" src={img} alt="Slider Image" />
-      </div>
-    </animated.div>
+      </animated.div>
+    </div>
   );
 }
 
