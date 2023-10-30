@@ -7,13 +7,15 @@ import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <div className="App">
       <NavComponent />
-      <Home />
-      <FooterComponet />
+      {/*<Home />
+      <FooterComponet /> */}
+      <Login />
     </div>
   );
 }

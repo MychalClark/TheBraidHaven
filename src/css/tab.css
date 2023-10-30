@@ -1,0 +1,59 @@
+.tabComponent {
+  padding-top: 1rem;
+}
+
+.tabPrice {
+  font-size: 2.3rem;
+}
+
+.tab {
+  -webkit-box-shadow: 1px 1px 8px 1px #ff8080, -9px 1px 8px 1px #ffe488,
+    -5px -1px 8px 1px #8cff85, 8px -1px 8px 1px #80c7ff, 8px 6px 8px 5px #e488ff,
+    -6px 6px 8px 5px #ff616b;
+
+  box-shadow: 1px 1px 8px 1px #ff8080, -9px 1px 8px 1px #ffe488,
+    -5px -1px 8px 1px #8cff85, 8px -1px 8px 1px #80c7ff, 8px 6px 8px 5px #e488ff,
+    -6px 6px 8px 5px #ff616b;
+  background-color: #fffefe;
+}
+
+.line {
+  height: 2px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.imgTab {
+  height: 11rem;
+  width: 11rem;
+  overflow: hidden;
+  border-color: #e16388 !important;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.imgTab > img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tab > a {
+  width: 50%;
+  background-color: #e16388;
+  color: #effefe;
+}
+
+.tabDesc {
+  height: 9rem;
+  font-size: 1.3rem;
+}
+
+.tabBtn {
+  border-color: #e16388 !important;
+  font-size: 1.6rem;
+}

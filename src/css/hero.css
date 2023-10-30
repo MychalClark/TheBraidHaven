@@ -1,31 +1,39 @@
 .heroComponent {
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 .heroText {
+  animation: opacityText 2s linear 1s forwards;
+  opacity: 0;
   position: absolute;
+  top: 13rem;
   left: 0;
-  bottom: 0;
-  animation: slideText 2s linear 2s forwards;
-  transform: translateX(-200%);
+  right: 0;
 }
 
 .heroText > h1 {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 3rem;
+  margin: 0;
+}
+p {
+  font-size: 1.5rem;
 }
 
-/* .heroText > .btn {
-  background-color:;
-} */
+.heroText > .btn {
+  background-color: #e16388;
+  color: #effefe;
+}
 
 .heroImg {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
+  width: 95%;
+  margin: auto;
   animation: slideImage 2s linear forwards;
 }
 
@@ -34,15 +42,15 @@
     height: 0vh;
   }
   to {
-    height: 100vh;
+    height: 70vh;
   }
 }
 
-@keyframes slideText {
+@keyframes opacityText {
   from {
-    transform: translateX(200%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
