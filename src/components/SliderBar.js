@@ -22,6 +22,9 @@ function SliderBar({ backgroundColor, title, desc, img, link }) {
     to: { opacity: 1 },
     reset: inView,
     config: { duration: randomDuration },
+    slidesPerView: 5, // Reduce the number of visible slides
+    slidesPerGroup: 5, // Reduce the number of slides moved per swipe
+    loop: false,
   });
 
   return (
@@ -36,7 +39,7 @@ function SliderBar({ backgroundColor, title, desc, img, link }) {
         <a
           name=""
           id=""
-          class="btn sliderTitle passionFont textColor2 m-0 p-0 h-50 align-items-end"
+          className="btn sliderTitle passionFont textColor2 m-0 p-0 h-50 align-items-end"
           href="#"
           role="button"
         >

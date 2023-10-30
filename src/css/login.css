@@ -1,6 +1,5 @@
 .login {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
 }
 
 .loginInfo {
@@ -18,13 +17,10 @@
   letter-spacing: 0.05rem;
   font-weight: 900;
 }
+
 .loginBtn {
   border-color: #e16388 !important;
-  background-color: #e16388;
-}
-.loginBtn {
-  border-color: #e16388 !important;
-  background-color: #e16388;
+  background-color: #e16388 !important;
 }
 
 .login::after {
@@ -37,10 +33,10 @@
   background: #ffdf79;
   transform-origin: 100%;
   z-index: 0;
-  animation: skewYAnimation 1.2s linear forwards;
+  animation: skewYBackground 1.2s linear forwards;
 }
 
-@keyframes skewYAnimation {
+@keyframes skewYBackground {
   from {
     transform: skewY(0deg);
   }

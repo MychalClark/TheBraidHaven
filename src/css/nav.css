@@ -2,6 +2,18 @@
   background-color: #fffefe;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.navButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  height: 4rem;
+}
 .navIcons {
   font-size: 1.4rem;
 }
@@ -44,4 +56,7 @@
 
 .navbar-toggler-icon {
   background-image: url("../../public/images/menuImg.png");
+}
+
+.bookLink {
 }
