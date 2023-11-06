@@ -3,19 +3,23 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .navButton {
-  background: transparent;
   border: none;
   cursor: pointer;
-  color: #fff;
-  display: flex;
-  align-items: center;
+
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .navContainer {
   height: 4rem;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navLinkContainer {
+  min-height: inherit;
 }
 .navIcons {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .navTitle {
@@ -24,9 +28,9 @@
   letter-spacing: 0.3rem;
 }
 
-.navLinks {
-  font-size: 1.3rem;
-
+.navLink {
+  font-size: 1.7rem;
+  width: 100%;
   font-weight: 1000;
 }
 
@@ -58,5 +62,9 @@
   background-image: url("../../public/images/menuImg.png");
 }
 
-.bookLink {
+.sideNav {
+  position: absolute;
+  height: 100vh;
+  top: 4rem;
+  left: 0;
 }

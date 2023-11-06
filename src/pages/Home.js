@@ -5,6 +5,8 @@ import TabComponent from "../components/TabComponent";
 import HeroComponent from "../components/HeroComponent";
 import BoxLinkComponent from "../components/BoxLinkComponent";
 import "../index.css";
+import HomeGalleryComponent from "../components/HomeGalleryComponent";
+
 function Home() {
   const boxBraidItem = {
     title: "Box Braids",
@@ -30,27 +32,12 @@ function Home() {
   return (
     <div className="home">
       <HeroComponent heroImg={"/images/girl2.png"} />
+
       <BoxLinkComponent links={links} />
+
       <TabComponent items={items} />
 
-      <SliderBar
-        backgroundColor="backgroundColor1"
-        title="Schedule!"
-        desc="Find openings, get yer hair done."
-        img="/images/girl_thumbnail.png"
-      />
-      <SliderBar
-        backgroundColor="backgroundColor4"
-        title="DEALS"
-        desc="New Deals. Shop fast or dont."
-        img="/images/girl1.png"
-      />
-      <SliderBar
-        backgroundColor="backgroundColor6"
-        title="Gallery"
-        desc="Find the hair thats right for you or sumn."
-        img="/images/girl_thumbnail.png"
-      />
+      <HomeGalleryComponent />
     </div>
   );
 }

@@ -3,16 +3,6 @@ import { useInView } from "react-intersection-observer";
 import "../css/boxLink.css";
 
 function BoxLinkComponent({ links }) {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const fadeIn = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    reset: inView,
-    config: { duration: 5000 },
-  });
   return (
     <div className="BoxLinkComponent pt-4 row justify-content-evenly ">
       <div className="title text-center row px-4">

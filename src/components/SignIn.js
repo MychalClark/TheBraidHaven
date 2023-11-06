@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { auth } from "../Firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
-function SignIn() {
+function SignIn({ onSignUpClick }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -75,7 +75,11 @@ function SignIn() {
             Google
           </div>
         </button>
-        <button type="button" className="btn btn-primary mx-1">
+        <button
+          type="button"
+          className="btn btn-primary mx-1"
+          onClick={onSignUpClick}
+        >
           <div className="oxygenFont  text-white"> Sign Up!</div>
         </button>
         <div className="alert alert-primary mt-4 my-1" role="alert">

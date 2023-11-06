@@ -10,7 +10,7 @@ import {
 import { collection, addDoc, getFirestore } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
-function SignUp() {
+function SignUp({ onSignInClick }) {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
@@ -118,8 +118,17 @@ function SignUp() {
       onSubmit={signUp}
       className="loginInfo backgroundColor2 rounded-2 text-center d-flex row p-4"
     >
+      <Container className="fairFont">
+        <img
+          alt=""
+          src="../images/logo.jpeg"
+          width="90"
+          height="90"
+          className="d-inline-block m-4 rounded-circle align-top"
+        />
+      </Container>
       <h2 className=" passionFont textColor1 ">Sign Up</h2>
-      <a href="#" className="badge  pb-3 text-danger">
+      <a onClick={onSignInClick} className="badge  pb-3 text-danger">
         Click to go back
       </a>
       <div className="mb-3">
